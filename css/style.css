@@ -1,0 +1,321 @@
+
+/* General pages CSS */
+
+
+#topbar {
+    text-align: center;
+    background-color: white;
+  }
+  
+  #topbar li {
+    
+    bottom: 5vh;
+   font-size: 26px;
+    display: inline;
+    padding: 0px 40px 0px 0px;
+  }
+  
+  #topbar a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .blackline {
+    background-color: black;
+    height: 3px;
+  }
+
+
+/*
+
+/* Custom Scrollbar */
+
+  /* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: black white;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 9px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+    border: 3px solid white;
+  }
+
+  
+
+/* Custom Scrollbar ends */
+
+  
+  /*
+  
+  .bottomrightpng {
+    position: absolute;
+    right: 50px;
+    height: 15%;
+    width: 5%;
+  }
+  
+  */
+  
+/* Home */
+
+#mainhomeart {
+    height: 85vh;
+    width: 90vw;
+    background-color: lightblue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-image: url(../assets/headerimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+/* Home ends */ 
+
+
+
+/* Characters page */
+
+  #charactersinfo {
+  }
+  
+  #characterbios {
+    margin-left: auto;
+    margin-right: auto;
+   width: 60%;
+    position: relative;
+    top: 5vh;
+  }
+  
+  #characterbios p {
+    padding: 15px 10px 0px 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 120%;
+  }
+  
+  #demongirlbio {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grif-template rows: 1fr 1fr;
+   background-color: black;
+    border: black 3px solid;
+   
+  }
+  
+  #demongirlfullbody {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+  }
+  
+  #demongirlbio p {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+    background-color: white;
+  }
+  
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  #demongirlheadshot1 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #demongirlheadshot2 {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+  }
+  
+  .whiteline {
+    background-color: white;
+    height: 40px;
+  }
+  
+  #flyingbuddybio {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grif-template rows: 1fr 1fr;
+   background-color: black;
+    margin-bottom: 75px;
+  
+    border: black 3px solid;
+  }
+  
+  #littlebuddyfullbody {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+  }
+  
+  #flyingbuddybio p {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+    background-color: white;
+  }
+  
+  #littlebuddyheadshot1 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+  
+  #littlebuddyheadshot2 {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+  }
+  
+  
+
+  /*  Scenes page */
+  
+.buttons {
+    height: 352px;
+    width: 257px;
+}
+
+  .my-gallery {
+    display: flex;
+}
+
+.comic {
+    display: none;
+}
+
+.comic.active {
+    display: block;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 70vh;
+  width: 70vh;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  background-color: black;
+  border: 5px solid black;
+}
+
+#square1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+#square2 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+#square3 {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+#square4 {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+#square11 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+#square12 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+#square13 {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+#square14 {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.comic {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 1fr;
+    height: 35vh;
+    width: 30vh;
+    grid-column-gap: 5px;
+    background-color: black;
+    border: 5px solid black;
+  }
+
+  */
+
+  #square3_1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  #square3_2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  #square3_3 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  #square3_4 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+.arrow {
+  display: flex;
+  align-items: center;
+  width: auto;
+  justify-content: space-between;
+  min-height: 100vh; 
+}
+
+
+/*
+.bottomrightpng {
+  position: absolute;
+  right: 50px;
+  bottom: 0px;
+  height: 15%;
+  width: 5%;
+}
+*/
+
+
+/* Scenes end */

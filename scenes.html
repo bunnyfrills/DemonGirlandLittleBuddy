@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" a href="css/style.css">
+    <title>Scenes</title>
+</head>
+<body>
+    
+
+    <div id="topbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="characters.html">Characters</a></li>
+          <li><a href="scenes.html">Scenes</a></li>
+        </ul>
+        </div>
+        
+        <div class="blackline">
+        </div>
+        
+        <div class="arrow">
+            <img id="my-left-arrow" class="buttons" src="assets/leftbutton.png">
+    
+    
+            <div class="my-gallery">
+                <div class="comic active">
+                    <div class="grid1">
+                        <img id="square1" src="assets/comic1_1.jpg">
+                        <img id="square2" src="assets/comic1_2.jpg">
+                        <img id="square3" src="assets/comic1_3.jpg">
+                        <img id="square4" src="assets/comic1_4.jpg">
+                    </div>
+    
+                </div>
+    
+                <div class="comic">
+                    <div class="grid1">
+                        <img id="square11" src="assets/comic2_1_1.jpg">
+                        <img id="square12" src="assets/comic2_2_1.jpg">
+                        <img id="square13" src="assets/comic2_3_1.jpg">
+                        <img id="square14" src="assets/comic2_4_1.jpg">
+                    </div>
+                </div>
+    
+    
+    
+    
+                <div class="comic">
+                    <div class="grid1">
+                        <img id="square11" src="assets/comic3_1_2.jpg">
+                        <img id="square12" src="assets/comic3_3_2.jpg">
+                        <img id="square13" src="assets/comic3_3_3.jpg">
+                        <img id="square14" src="assets/comic3_4.jpg">
+                    </div>
+                </div>
+    
+    
+    
+                <!-- third comic
+                  <div class="comic">
+                    <div class="grid1">
+                     <img id="square3_1" src="assets/comic3_1.jpg">
+                      <img id="square3_2" src="assets/comic3_2.jpg">
+                      <img id="square3_3" src="assets/comic3_3.jpg">
+                      <img id="square3_4" src="assets/comic3_4.jpg">
+                   </div>
+                -->
+    
+    
+    
+    
+            </div>
+    
+            <img id="my-right-arrow" class="buttons" src="assets/rightbutton.png">
+    
+    
+            <!-- bottom right img not used
+            <img class="bottomrightpng" src="https://re-mm-assets.s3.amazonaws.com/product_photo/46485/large_large_Poly_RoyalBlue_3_2935U_1471509912.jpg%22%3E
+            -->
+        </div>
+
+
+        <script>
+            const images = document.querySelectorAll('.comic');
+const leftArrow = document.querySelector('#my-left-arrow');
+const rightArrow = document.querySelector('#my-right-arrow');
+let activeImage = 0;
+
+leftArrow.addEventListener('click', () => {
+    images[activeImage].classList.remove('active');
+    activeImage--;
+    if (activeImage < 0) {
+        activeImage = images.length - 1;
+    }
+    images[activeImage].classList.add('active');
+});
+
+rightArrow.addEventListener('click', () => {
+    images[activeImage].classList.remove('active');
+    activeImage++;
+    if (activeImage >= images.length) {
+        activeImage = 0;
+    }
+    images[activeImage].classList.add('active');
+});
+
+        </script>
+
+
+</body>
+</html>
